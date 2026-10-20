@@ -1,57 +1,54 @@
 # HackerRank Challenges
 
-Este repositório contém algumas soluções de desafios do HackerRank em JavaScript.
+Uma coleção de soluções para desafios de programação do HackerRank, implementadas em JavaScript. O repositório serve como material de estudo e prática de lógica de programação, com cada desafio organizado em sua própria pasta.
 
-## Objetivo
+## Desafios
 
-Praticar lógica de programação, estruturas básicas e resolução de problemas com JavaScript.
+| Pasta | Desafio | O que faz |
+|---|---|---|
+| [`solve-me-first/`](./solve-me-first/) | Solve Me First | Soma dois números inteiros. |
+| [`simple-array-sum/`](./simple-array-sum/) | Simple Array Sum | Soma os elementos de um array de inteiros. |
 
-## Arquivos
+Cada pasta contém um `index.js` com a implementação e um `README.md` com a descrição e as instruções específicas daquele desafio.
 
-- `solve-me-first.js` — resolve o desafio de soma de dois inteiros.
-- `simple-array-sum.js` — calcula a soma dos elementos de um array.
+## Pré-requisitos
 
-## Como executar
+- [Node.js](https://nodejs.org/) instalado.
+- Git, caso queira clonar o repositório.
 
-### 1. Instale o Node.js
+Não é necessário instalar dependências adicionais.
 
-Certifique-se de que o Node.js está instalado em sua máquina.
+## Como utilizar
 
-### 2. Execute um arquivo
+Clone o repositório e entre na pasta:
 
 ```bash
-node solve-me-first.js
-node simple-array-sum.js
+git clone <URL_DO_REPOSITORIO>
+cd hacker-rank-challenges
 ```
 
-## Exemplo
+Execute o desafio desejado com o Node.js:
 
-### solve-me-first.js
-
-```javascript
-function solveMeFirst(a, b) {
-  return a + b
-}
+```bash
+node solve-me-first/index.js
+node simple-array-sum/index.js
 ```
 
-### simple-array-sum.js
+Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no console. Para testar outros valores, altere os argumentos ou o array definidos no `index.js` correspondente e execute o comando novamente.
 
-```javascript
-function simpleArraySum(ar) {
-  let sum = 0
+## Estrutura
 
-  for (let i = 0; i < ar.length; i++) {
-    sum += ar[i]
-  }
-
-  return sum
-}
+```text
+.
+├── README.md
+├── solve-me-first/
+│   ├── README.md
+│   └── index.js
+└── simple-array-sum/
+    ├── README.md
+    └── index.js
 ```
 
-## Observação
+## Contribuições
 
-Este projeto é uma coleção de exercícios básicos e pode ser expandido com novos desafios conforme a prática evolui.
-
-## Autor
-
-Seu nome aqui
+Novos desafios podem ser adicionados em pastas próprias. Inclua a solução em JavaScript e um README com a descrição do problema, exemplos e instruções para execução.
