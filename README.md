@@ -6,10 +6,13 @@ Uma coleção de soluções para desafios de programação do HackerRank, implem
 
 | Pasta | Desafio | O que faz |
 |---|---|---|
+| [`a-very-big-sum/`](./a-very-big-sum/) | A Very Big Sum | Soma os valores de um array, incluindo números grandes. |
+| [`compare-the-triplets/`](./compare-the-triplets/) | Compare the Triplets | Compara as notas de Alice e Bob e calcula a pontuação de cada um. |
+| [`diagonal-difference/`](./diagonal-difference/) | Diagonal Difference | Calcula a diferença absoluta entre as diagonais de uma matriz quadrada. |
 | [`solve-me-first/`](./solve-me-first/) | Solve Me First | Soma dois números inteiros. |
 | [`simple-array-sum/`](./simple-array-sum/) | Simple Array Sum | Soma os elementos de um array de inteiros. |
 
-Cada pasta contém um `index.js` com a implementação e um `README.md` com a descrição e as instruções específicas daquele desafio.
+Cada pasta de desafio contém um `index.js` com a implementação e um `README.md` com a descrição e as instruções específicas daquele desafio. A pasta [`exemplo-copiar/`](./exemplo-copiar/) contém arquivos vazios como ponto de partida para novos desafios.
 
 ## Pré-requisitos
 
@@ -30,6 +33,9 @@ cd hacker-rank-challenges
 Execute o desafio desejado com o Node.js:
 
 ```bash
+node a-very-big-sum/index.js
+node compare-the-triplets/index.js
+node diagonal-difference/index.js
 node solve-me-first/index.js
 node simple-array-sum/index.js
 ```
@@ -41,6 +47,18 @@ Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no cons
 ```text
 .
 ├── README.md
+├── a-very-big-sum/
+│   ├── README.md
+│   └── index.js
+├── compare-the-triplets/
+│   ├── README.md
+│   └── index.js
+├── diagonal-difference/
+│   ├── README.md
+│   └── index.js
+├── exemplo-copiar/
+│   ├── README.md
+│   └── index.js
 ├── solve-me-first/
 │   ├── README.md
 │   └── index.js
