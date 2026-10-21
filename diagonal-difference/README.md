@@ -31,7 +31,7 @@ const arr = [
 
 ## Como executar
 
-É necessário ter o [Node.js](https://nodejs.org/) instalado. Na pasta `diagonal-diference`, execute:
+É necessário ter o [Node.js](https://nodejs.org/) instalado. Na pasta `diagonal-difference`, execute:
 
 ```bash
 node index.js

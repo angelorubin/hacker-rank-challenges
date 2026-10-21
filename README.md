@@ -9,6 +9,7 @@ Uma coleção de soluções para desafios de programação do HackerRank, implem
 | [`a-very-big-sum/`](./a-very-big-sum/) | A Very Big Sum | Soma os valores de um array, incluindo números grandes. |
 | [`compare-the-triplets/`](./compare-the-triplets/) | Compare the Triplets | Compara as notas de Alice e Bob e calcula a pontuação de cada um. |
 | [`diagonal-difference/`](./diagonal-difference/) | Diagonal Difference | Calcula a diferença absoluta entre as diagonais de uma matriz quadrada. |
+| [`plus-minus/`](./plus-minus/) | Plus Minus | Calcula as proporções de números positivos, negativos e zeros em um array. |
 | [`solve-me-first/`](./solve-me-first/) | Solve Me First | Soma dois números inteiros. |
 | [`simple-array-sum/`](./simple-array-sum/) | Simple Array Sum | Soma os elementos de um array de inteiros. |
 
@@ -36,6 +37,7 @@ Execute o desafio desejado com o Node.js:
 node a-very-big-sum/index.js
 node compare-the-triplets/index.js
 node diagonal-difference/index.js
+node plus-minus/index.js
 node solve-me-first/index.js
 node simple-array-sum/index.js
 ```
@@ -54,6 +56,9 @@ Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no cons
 │   ├── README.md
 │   └── index.js
 ├── diagonal-difference/
+│   ├── README.md
+│   └── index.js
+├── plus-minus/
 │   ├── README.md
 │   └── index.js
 ├── exemplo-copiar/
