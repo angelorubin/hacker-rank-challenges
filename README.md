@@ -9,9 +9,11 @@ Uma coleção de soluções para desafios de programação do HackerRank, implem
 | [`a-very-big-sum/`](./a-very-big-sum/) | A Very Big Sum | Soma os valores de um array, incluindo números grandes. |
 | [`compare-the-triplets/`](./compare-the-triplets/) | Compare the Triplets | Compara as notas de Alice e Bob e calcula a pontuação de cada um. |
 | [`diagonal-difference/`](./diagonal-difference/) | Diagonal Difference | Calcula a diferença absoluta entre as diagonais de uma matriz quadrada. |
+| [`min-max-sum/`](./min-max-sum/) | Mini Max Sum | Encontra a menor e a maior soma possível usando quatro dos cinco inteiros. |
 | [`plus-minus/`](./plus-minus/) | Plus Minus | Calcula as proporções de números positivos, negativos e zeros em um array. |
 | [`solve-me-first/`](./solve-me-first/) | Solve Me First | Soma dois números inteiros. |
 | [`simple-array-sum/`](./simple-array-sum/) | Simple Array Sum | Soma os elementos de um array de inteiros. |
+| [`staircase/`](./staircase/) | Staircase | Imprime uma escada alinhada à direita com `#` e espaços. |
 
 Cada pasta de desafio contém um `index.js` com a implementação e um `README.md` com a descrição e as instruções específicas daquele desafio. A pasta [`exemplo-copiar/`](./exemplo-copiar/) contém arquivos vazios como ponto de partida para novos desafios.
 
@@ -37,9 +39,11 @@ Execute o desafio desejado com o Node.js:
 node a-very-big-sum/index.js
 node compare-the-triplets/index.js
 node diagonal-difference/index.js
+node min-max-sum/index.js
 node plus-minus/index.js
 node solve-me-first/index.js
 node simple-array-sum/index.js
+node staircase/index.js
 ```
 
 Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no console. Para testar outros valores, altere os argumentos ou o array definidos no `index.js` correspondente e execute o comando novamente.
@@ -58,16 +62,22 @@ Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no cons
 ├── diagonal-difference/
 │   ├── README.md
 │   └── index.js
-├── plus-minus/
+├── min-max-sum/
 │   ├── README.md
 │   └── index.js
-├── exemplo-copiar/
+├── plus-minus/
 │   ├── README.md
 │   └── index.js
 ├── solve-me-first/
 │   ├── README.md
 │   └── index.js
-└── simple-array-sum/
+├── simple-array-sum/
+│   ├── README.md
+│   └── index.js
+├── staircase/
+│   ├── README.md
+│   └── index.js
+└── exemplo-copiar/
     ├── README.md
     └── index.js
 ```
