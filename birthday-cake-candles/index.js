@@ -5,7 +5,7 @@
  * The function accepts INTEGER_ARRAY candles as parameter.
  */
 
-const candles = [1, 8, 2, 4, 8]
+const candles = [3,2,1,3]
 
 function birthdayCakeCandles(candles) {
   /**
