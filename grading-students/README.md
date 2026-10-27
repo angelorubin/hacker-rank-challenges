@@ -1,55 +1,41 @@
 # Grading Students
 
-Solução em JavaScript para o desafio **Grading Students** do HackerRank. O objetivo é automatizar o arredondamento das notas dos alunos da HackerLand University.
+Desafio **Grading Students** do HackerRank, resolvido em JavaScript. O objetivo é automatizar o arredondamento das notas dos alunos da HackerLand University.
 
 ## Descrição
 
-A universidade segue a seguinte política de notas:
+A Universidade HackerLand possui a seguinte política de notas:
 
-- Cada aluno recebe uma nota (`grade`) no intervalo inclusivo de `0` a `100`.
-- Qualquer nota menor que `40` é considerada reprovação.
+- Cada aluno recebe uma nota (`grade`) no intervalo de `0` a `100`.
+- Qualquer nota inferior a `40` é considerada reprovação.
 
-A professora Sam arredonda cada nota de acordo com estas regras:
+Sam é professor na universidade e gosta de arredondar a nota de cada aluno seguindo estas regras:
 
-1. Se a diferença entre a nota e o próximo múltiplo de `5` for menor que `3`, arredonde a nota para o próximo múltiplo de `5`.
-2. Se a nota for menor que `38`, nenhum arredondamento ocorre, pois o resultado continuaria sendo reprovação.
+1. Se a diferença entre a nota e o próximo múltiplo de `5` for menor que `3`, a nota é arredondada para cima, para esse próximo múltiplo de `5`.
+2. Se a nota for inferior a `38`, nenhum arredondamento é feito, pois o resultado ainda seria uma nota de reprovação.
 
 Exemplos das regras:
 
 - `84` é arredondado para `85` (`85 - 84 = 1`, menor que `3`).
-- `29` não é arredondado (o resultado seria menor que `40`).
+- `33` não é arredondado (o resultado seria inferior a `38`).
 - `57` não é arredondado (`60 - 57 = 3`, que não é menor que `3`).
 
-## Como funciona
+## Descrição da função
 
-A função `gradingStudents(grades)` deve percorrer a lista de notas e, para cada uma:
+Complete a função `gradingStudents` com o seguinte parâmetro:
 
-- ignorar o arredondamento quando `grade < 38`;
-- calcular o próximo múltiplo de `5` (usando `Math.ceil(grade / 5) * 5`);
-- arredondar apenas se a diferença para esse múltiplo for menor que `3`;
-- manter a nota original nos demais casos.
+- `grades`: um array de inteiros com as notas antes do arredondamento.
 
-```js
-function gradingStudents(grades) {
-  return grades.map((grade) => {
-    if (grade < 38) return grade;
-
-    const nextMultipleOf5 = Math.ceil(grade / 5) * 5;
-    const difference = nextMultipleOf5 - grade;
-
-    return difference < 3 ? nextMultipleOf5 : grade;
-  });
-}
-```
+**Retorno:** um array de inteiros com as notas após o arredondamento.
 
 ## Formato de entrada
 
 - A primeira linha contém um inteiro `n`, o número de alunos.
-- As `n` linhas seguintes contêm, cada uma, um inteiro `grades[i]` com a nota antes do arredondamento.
+- Cada uma das `n` linhas seguintes contém um inteiro `grades[i]`, a nota de um aluno.
 
 ## Formato de saída
 
-Retorne um array de inteiros com as notas após o arredondamento, na mesma ordem da entrada.
+Retorne um array com as notas finais, na mesma ordem da entrada.
 
 ## Restrições
 
@@ -79,16 +65,19 @@ Saída:
 
 Explicação:
 
-- `73`: o próximo múltiplo de `5` é `75` e `75 - 73 = 2 < 3`, então a nota é arredondada para `75`.
-- `67`: o próximo múltiplo de `5` é `70` e `70 - 67 = 3`, que não é menor que `3`, então a nota permanece `67`.
-- `38`: o próximo múltiplo de `5` é `40` e `40 - 38 = 2 < 3`, então a nota é arredondada para `40`.
-- `33`: a nota é menor que `38`, então não há arredondamento e permanece `33`.
+- O aluno recebeu `73` e o próximo múltiplo de `5` é `75`. Como `75 - 73 < 3`, a nota é arredondada para `75`.
+- O aluno recebeu `67` e o próximo múltiplo de `5` é `70`. Como `70 - 67 = 3`, a nota permanece `67`.
+- O aluno recebeu `38` e o próximo múltiplo de `5` é `40`. Como `40 - 38 < 3`, a nota é arredondada para `40`.
+- O aluno recebeu `33`, que é inferior a `38`, então a nota permanece `33`.
 
-## Complexidade
+## Como executar
 
-- **Tempo:** `O(n)`, pois cada nota é processada uma única vez.
-- **Espaço adicional:** `O(n)`, devido ao array retornado por `map`.
+É necessário ter o [Node.js](https://nodejs.org/) instalado. Na pasta `grading-students`, execute:
+
+```bash
+node index.js
+```
 
 ## Arquivo da solução
 
-O arquivo [`index.js`](./index.js) deve conter a implementação da função `gradingStudents` e um array de exemplo para teste.
+O arquivo [`index.js`](./index.js) deve conter a função `gradingStudents` implementada.
