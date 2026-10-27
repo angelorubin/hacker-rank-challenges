@@ -4,9 +4,14 @@
  * The function accepts INTEGER_ARRAY grades as parameter.
  */
 
-const grades = [30, 10, 17, 29, 87]
+const grades = [4, 73, 67, 38, 33]
+
+const isLessThan40 = (grade) => grade < 40 ? true : false
+const isMultiple = (grade) => 
+
+console.log(isLessThan40(39))
 
 function gradingStudents(grades) {
-    // Write your code here
+	// Write your code here
 
 }
