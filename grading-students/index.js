@@ -6,12 +6,29 @@
 
 const grades = [4, 73, 67, 38, 33]
 
-const isLessThan40 = (grade) => grade < 40 ? true : false
-const isMultiple = (grade) => 
-
-console.log(isLessThan40(39))
-
 function gradingStudents(grades) {
-	// Write your code here
 
+	for (let i = 0; i < grades.length; i++) {
+		let currentGrade = grades[i]
+
+		if (currentGrade < 38) {
+        continue;
+		}
+
+		let modifiedNote = currentGrade
+
+		while (modifiedNote % 5 != 0) {
+        modifiedNote++;
+		}
+
+		let difference = modifiedNote - currentGrade;
+
+    if (difference < 3) {
+        grades[i] = modifiedNote;
+    }
+	}
+
+	return grades
 }
+
+console.log(gradingStudents(grades))
