@@ -7,6 +7,7 @@ Uma coleção de soluções para desafios de programação do HackerRank, implem
 | Pasta | Desafio | O que faz |
 |---|---|---|
 | [`a-very-big-sum/`](./a-very-big-sum/) | A Very Big Sum | Soma os valores de um array, incluindo números grandes. |
+| [`apple-and-orange/`](./apple-and-orange/) | Apple and Orange | Conta quantas maçãs e laranjas caem sobre a casa de Sam. |
 | [`birthday-cake-candles/`](./birthday-cake-candles/) | Birthday Cake Candles | Conta quantas velas do bolo têm a maior altura. |
 | [`compare-the-triplets/`](./compare-the-triplets/) | Compare the Triplets | Compara as notas de Alice e Bob e calcula a pontuação de cada um. |
 | [`diagonal-difference/`](./diagonal-difference/) | Diagonal Difference | Calcula a diferença absoluta entre as diagonais de uma matriz quadrada. |
@@ -40,6 +41,7 @@ Execute o desafio desejado com o Node.js:
 
 ```bash
 node a-very-big-sum/index.js
+node apple-and-orange/index.js
 node birthday-cake-candles/index.js
 node compare-the-triplets/index.js
 node diagonal-difference/index.js
@@ -60,6 +62,9 @@ Os arquivos atualmente incluem valores de exemplo e imprimem o resultado no cons
 .
 ├── README.md
 ├── a-very-big-sum/
+│   ├── README.md
+│   └── index.js
+├── apple-and-orange/
 │   ├── README.md
 │   └── index.js
 ├── birthday-cake-candles/
