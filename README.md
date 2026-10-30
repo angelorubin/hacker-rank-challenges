@@ -10,9 +10,11 @@ Uma coleção de soluções para desafios de programação do HackerRank, implem
 | [`apple-and-orange/`](./apple-and-orange/) | Apple and Orange | Conta quantas maçãs e laranjas caem sobre a casa de Sam. |
 | [`birthday-cake-candles/`](./birthday-cake-candles/) | Birthday Cake Candles | Conta quantas velas do bolo têm a maior altura. |
 | [`compare-the-triplets/`](./compare-the-triplets/) | Compare the Triplets | Compara as notas de Alice e Bob e calcula a pontuação de cada um. |
+| [`cutting-boards/`](./cutting-boards/) | Cutting Boards | Divide uma placa em quadrados de `1 x 1` com o menor custo total de cortes. |
 | [`diagonal-difference/`](./diagonal-difference/) | Diagonal Difference | Calcula a diferença absoluta entre as diagonais de uma matriz quadrada. |
 | [`grading-students/`](./grading-students/) | Grading Students | Arredonda as notas dos alunos conforme a política da HackerLand University. |
 | [`min-max-sum/`](./min-max-sum/) | Mini Max Sum | Encontra a menor e a maior soma possível usando quatro dos cinco inteiros. |
+| [`minimum-absolute-difference-array/`](./minimum-absolute-difference-array/) | Minimum Absolute Difference in an Array | Encontra a menor diferença absoluta entre pares de elementos de um array. |
 | [`plus-minus/`](./plus-minus/) | Plus Minus | Calcula as proporções de números positivos, negativos e zeros em um array. |
 | [`simple-array-sum/`](./simple-array-sum/) | Simple Array Sum | Soma os elementos de um array de inteiros. |
 | [`solve-me-first/`](./solve-me-first/) | Solve Me First | Soma dois números inteiros. |
