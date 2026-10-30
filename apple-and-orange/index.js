@@ -10,7 +10,17 @@
  *  6. INTEGER_ARRAY oranges
  */
 
-function countApplesAndOranges(s, t, a, b, apples, oranges) {
-    // Write your code here
+const s = 0
+const t = 0
+const a = 0
+const b = 0
+const apples = 0
+const oranges = 0
 
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+  // Write your code here
+  console.log('oi')
+	return;
 }
+
+countApplesAndOranges()

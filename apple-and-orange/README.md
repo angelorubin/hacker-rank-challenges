@@ -1,63 +1,82 @@
-Sam's house has an apple tree and an orange tree that yield an abundance of fruit. Using the information given below, determine the number of apples and oranges that land on Sam's house.
+A casa do Sam tem uma macieira e uma laranjeira que produzem uma abundância de frutos. Usando as informações fornecidas abaixo, determine o número de maçãs e laranjas que caem na casa do Sam.
 
-In the diagram below:
+No diagrama abaixo:
 
-The red region denotes the house, where  is the start point, and  is the endpoint. The apple tree is to the left of the house, and the orange tree is to its right.
-Assume the trees are located on a single point, where the apple tree is at point , and the orange tree is at point .
-When a fruit falls from its tree, it lands  units of distance from its tree of origin along the -axis. *A negative value of  means the fruit fell  units to the tree's left, and a positive value of  means it falls  units to the tree's right. *
+A região vermelha denota a casa, onde $s$ é o ponto inicial, e $t$ é o ponto final. A macieira está à esquerda da casa, e a laranjeira está à sua direita.
+Assuma que as árvores estão localizadas em um único ponto, onde a macieira está no ponto $a$, e a laranjeira está no ponto $b$.
+Quando um fruto cai de sua árvore, ele pousa a $d$ unidades de distância de sua árvore de origem ao longo do eixo $x$. *Um valor negativo de* $d$ *significa que o fruto caiu* $d$ *unidades à esquerda da árvore, e um valor positivo de* $d$ *significa que ele cai* $d$ *unidades à direita da árvore.*
 Apple and orange(2).png
 
-Given the value of  for  apples and  oranges, determine how many apples and oranges will fall on Sam's house (i.e., in the inclusive range )?
+Dado o valor de $d$ para $m$ maçãs e $n$ laranjas, determine quantas maçãs e laranjas cairão na casa do Sam (ou seja, no intervalo inclusivo $[s, t]$)?
 
-For example, Sam's house is between  and . The apple tree is located at  and the orange at . There are  apples and  oranges. Apples are thrown  units distance from , and  units distance. Adding each apple distance to the position of the tree, they land at . Oranges land at . One apple and two oranges land in the inclusive range  so we print
+Por exemplo, a casa do Sam fica entre $s = 7$ e $t = 10$. A macieira está localizada em $a = 4$ e a laranjeira em $b = 12$. Existem $3$ maçãs e $3$ laranjas. As maçãs são arremessadas a $2$, $3$ e $-4$ unidades de distância de $a$, e as laranjas a $3$, $-2$ e $-4$ unidades de distância. Adicionando a distância de cada maçã à posição da árvore, elas pousam em $4+2=6$, $4+3=7$ e $4-4=0$. As laranjas pousam em $12+3=15$, $12-2=10$ e $12-4=8$. Uma maçã e duas laranjas caem no intervalo inclusivo $[7, 10]$, então imprimimos
 
+```
 1
 2
-Function Description
 
-Complete the countApplesAndOranges function in the editor below. It should print the number of apples and oranges that land on Sam's house, each on a separate line.
+```
 
-countApplesAndOranges has the following parameter(s):
+### Descrição da Função
 
-s: integer, starting point of Sam's house location.
-t: integer, ending location of Sam's house location.
-a: integer, location of the Apple tree.
-b: integer, location of the Orange tree.
-apples: integer array, distances at which each apple falls from the tree.
-oranges: integer array, distances at which each orange falls from the tree.
-Input Format
+Complete a função `countApplesAndOranges` no editor abaixo. Ela deve imprimir o número de maçãs e laranjas que caem na casa do Sam, cada uma em uma linha separada.
 
-The first line contains two space-separated integers denoting the respective values of  and .
-The second line contains two space-separated integers denoting the respective values of  and .
-The third line contains two space-separated integers denoting the respective values of  and .
-The fourth line contains  space-separated integers denoting the respective distances that each apple falls from point .
-The fifth line contains  space-separated integers denoting the respective distances that each orange falls from point .
+`countApplesAndOranges` tem o(s) seguinte(s) parâmetro(s):
 
-Constraints
+* **s**: inteiro, ponto inicial da localização da casa do Sam.
 
-Output Format
+* **t**: inteiro, localização final da localização da casa do Sam.
 
-Print two integers on two different lines:
+* **a**: inteiro, localização da macieira.
 
-The first integer: the number of apples that fall on Sam's house.
-The second integer: the number of oranges that fall on Sam's house.
-Sample Input 0
+* **b**: inteiro, localização da laranjeira.
 
+* **apples**: array de inteiros, distâncias em que cada maçã cai da árvore.
+
+* **oranges**: array de inteiros, distâncias em que cada laranja cai da árvore.
+
+### Formato de Entrada
+
+A primeira linha contém dois inteiros separados por espaço denotando os respectivos valores de $s$ e $t$.
+A segunda linha contém dois inteiros separados por espaço denotando os respectivos valores de $a$ e $b$.
+A terceira linha contém dois inteiros separados por espaço denotando os respectivos valores de $m$ e $n$.
+A quarta linha contém $m$ inteiros separados por espaço denotando as respectivas distâncias que cada maçã cai do ponto $a$.
+A quinta linha contém $n$ inteiros separados por espaço denotando as respectivas distâncias que cada laranja cai do ponto $b$.
+
+### Restrições
+
+### Formato de Saída
+
+Imprima dois inteiros em duas linhas diferentes:
+
+O primeiro inteiro: o número de maçãs que caem na casa do Sam.
+O segundo inteiro: o número de laranjas que caem na casa do Sam.
+
+### Exemplo de Entrada 0
+
+```
 7 11
 5 15
 3 2
 -2 2 1
 5 -6
-Sample Output 0
 
+```
+
+### Exemplo de Saída 0
+
+```
 1
 1
-Explanation 0
 
-The first apple falls at position .
-The second apple falls at position .
-The third apple falls at position .
-The first orange falls at position .
-The second orange falls at position .
-Only one fruit (the second apple) falls within the region between  and , so we print  as our first line of output.
-Only the second orange falls within the region between  and , so we print  as our second line of output.
+```
+
+### Explicação 0
+
+A primeira maçã cai na posição $5 + (-2) = 3$.
+A segunda maçã cai na posição $5 + 2 = 7$.
+A terceira maçã cai na posição $5 + 1 = 6$.
+A primeira laranja cai na posição $15 + 5 = 20$.
+A segunda laranja cai na posição $15 + (-6) = 9$.
+Apenas um fruto (a segunda maçã) cai dentro da região entre $7$ e $11$, então imprimimos $1$ como nossa primeira linha de saída.
+Apenas a segunda laranja cai dentro da região entre $7$ e $11$, então imprimimos $1$ como nossa segunda linha de saída.
